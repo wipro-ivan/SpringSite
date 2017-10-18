@@ -158,12 +158,17 @@ public class User {
     public void setSecurityLevel(String securityLevel) {
           this.securityLevel = securityLevel;
     }
-    
+    //constructor for user model
     public User (){
           
     }
-	@Override
-	public String toString() {//for logging 
+    
+	@Override /*override tag added because we are overriding the toString 
+	method that is automatically made when you create a class
+	*/
+	public String toString() {/*can be used in the future to log the 
+	information of your class in a file and check for errors
+	*/
 		return "User [employeeID=" + employeeID + ", firstName=" + firstName
 				+ ", lastName=" + lastName + ", emailAddr=" + emailAddr
 				+ ", password=" + password + ", DOB=" + DOB + ", addressLine1="
